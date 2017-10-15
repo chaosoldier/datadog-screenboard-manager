@@ -6,6 +6,9 @@ following flow on multi datadog enviroments.
 show -> pull -> edit screenboard on local -> diff -> push
 ```
 
+- diff screenboard before update.
+- create logging current remote status before update.
+
 ## set up
 
 ```
