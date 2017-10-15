@@ -2,8 +2,6 @@
 untill datadog screenboard function for Terraform release
 
 ```
-usage() {
-    cat <<EOF
 Usage: ./screenboard-manager.sh -m \$MODE -e \$ENV -i \$ID
 
 MODE:
