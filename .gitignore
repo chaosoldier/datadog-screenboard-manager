@@ -1,0 +1,6 @@
+config/
+.DS_Store
+.diff/
+# Optional
+status/
+log/
