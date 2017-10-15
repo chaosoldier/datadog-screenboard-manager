@@ -15,7 +15,7 @@ show -> pull -> edit screenboard on local -> diff -> push
 pip install datadog
 ```
 
-... and fit .gitignore file.
+... and fix .gitignore file.
 
 ## usage
 
