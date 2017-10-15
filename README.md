@@ -1,7 +1,7 @@
 # datadog-screenboard-manager
 untill datadog screenboard function for Terraform release
 
-following flow
+following flow on multi datadog enviroments.
 ```
 show -> pull -> edit screenboard on local -> diff -> push
 ```
