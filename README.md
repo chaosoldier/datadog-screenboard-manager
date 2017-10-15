@@ -9,6 +9,11 @@ show -> pull -> edit screenboard on local -> diff -> push
 - diff screenboard before update.
 - create logging current remote status before update.
 
+note
+
+- NOT support Template variables.
+- NOT support S3 upload yet.
+
 ## set up
 
 ```
