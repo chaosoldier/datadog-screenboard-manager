@@ -2,7 +2,9 @@
 untill datadog screenboard function for Terraform release
 
 following flow
+```
 show -> pull -> edit screenboard on local -> diff -> push
+```
 
 ## set up
 
