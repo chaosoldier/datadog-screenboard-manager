@@ -1,6 +1,16 @@
 # datadog-screenboard-manager
 untill datadog screenboard function for Terraform release
 
+## set up
+
+```
+pip install datadog
+```
+
+... and fit .gitignore file.
+
+## usage
+
 ```
 Usage: ./screenboard-manager.sh -m \$MODE -e \$ENV -i \$ID
 
