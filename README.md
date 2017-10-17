@@ -3,11 +3,12 @@ It is limited untill datadog screenboard function for Terraform is released
 
 I assume the following flow.
 ```
-show -> pull -> edit screenboard on local -> diff -> push
+show -> pull(git pull) -> edit screenboard on local -> diff -> push(git push)
 ```
 
 - diff screenboard before update.
 - create logging current remote status before update.
+- git integration (option)
 
 note
 
@@ -49,7 +50,7 @@ ex)
     ./screenboard-manager.sh show -e test-prd -i 230368
 ```
 
-
+Project Structure
 ```
 ├── README.md
 ├── config
