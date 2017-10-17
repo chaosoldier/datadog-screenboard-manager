@@ -35,6 +35,7 @@ done
 
 CONFIG_DIR=./config/
 CONFIG_FILE_PATH=$CONFIG_DIR.dogrc_$ENV
+mkdir -p $CONFIG_DIR 2>/dev/null
 if [ ! -e $CONFIG_FILE_PATH ]; then
   echo "you must set config file on $CONFIG_FILE_PATH"
   exit 0
@@ -63,6 +64,7 @@ screenboard_show () {
 }
 
 screenboard_pull () {
+  git pull
   echo $STATUS_FILE_PATH
   if [ -e $STATUS_FILE_PATH ]; then
     echo "status file "$STATUS_FILE_PATH" already exits . ok to update this status file ? (yes)"
@@ -98,6 +100,9 @@ screenboard_push () {
   mkdir -p $UPDATE_LOG_DIR 2>/dev/null
   dog_show | tee $UPDATE_LOG_FILE_PATH
   dog_push 
+  git add .
+  git commit -m "update log file $UPDATE_LOG_FILE_PATH"
+  git push
 }
 
 case $MODE in
