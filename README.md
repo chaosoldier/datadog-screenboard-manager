@@ -20,6 +20,12 @@ note
 pip install datadog
 ```
 
+create file on ./config/.dogrc_ENV
+```
+[Connection]
+apikey = XXXX
+appkey = XXXXXXXX
+```
 ... and fix .gitignore file.
 
 ## usage
