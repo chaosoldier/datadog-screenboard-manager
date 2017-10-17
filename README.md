@@ -1,7 +1,7 @@
 # datadog-screenboard-manager
-untill datadog screenboard function for Terraform release
+It is limited untill datadog screenboard function for Terraform is released
 
-following flow on multi datadog enviroments.
+I assume the following flow.
 ```
 show -> pull -> edit screenboard on local -> diff -> push
 ```
@@ -20,13 +20,14 @@ note
 pip install datadog
 ```
 
-create file on ./config/.dogrc_ENV
+create ./config directory and ./config/.dogrc_ENV file
+
 ```
 [Connection]
 apikey = XXXX
 appkey = XXXXXXXX
 ```
-... and fix .gitignore file.
+... and fix .gitignore file, if you needs.
 
 ## usage
 
