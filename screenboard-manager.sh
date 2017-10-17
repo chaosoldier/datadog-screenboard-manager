@@ -49,7 +49,7 @@ DIFF_FILE_PATH=$DIFF_DIR$S_ID.json
 
 DATE=`date +%Y%m%d_%H-%M-%S`
 UPDATE_LOG_DIR=./log/$ENV/$S_ID/
-UPDATE_LOG_FILE_PATH=$UPDATE_LOG_DIR/update-$DATE.json
+UPDATE_LOG_FILE_PATH=$UPDATE_LOG_DIRupdate-$DATE.json
 
 dog_show () {
   dog --config $CONFIG_FILE_PATH screenboard show $S_ID | jq '.'
@@ -64,7 +64,7 @@ screenboard_show () {
 }
 
 screenboard_pull () {
-  git pull
+#  git pull
   echo $STATUS_FILE_PATH
   if [ -e $STATUS_FILE_PATH ]; then
     echo "status file "$STATUS_FILE_PATH" already exits . ok to update this status file ? (yes)"
@@ -100,9 +100,9 @@ screenboard_push () {
   mkdir -p $UPDATE_LOG_DIR 2>/dev/null
   dog_show | tee $UPDATE_LOG_FILE_PATH
   dog_push 
-  git add .
-  git commit -m "update log file $UPDATE_LOG_FILE_PATH"
-  git push
+#  git add .
+#  git commit -m "update log file $UPDATE_LOG_FILE_PATH"
+#  git push
 }
 
 case $MODE in
