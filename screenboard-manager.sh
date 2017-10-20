@@ -49,7 +49,7 @@ DIFF_FILE_PATH=$DIFF_DIR$S_ID.json
 
 DATE=`date +%Y%m%d_%H-%M-%S`
 UPDATE_LOG_DIR=./log/$ENV/$S_ID/
-UPDATE_LOG_FILE_PATH=$UPDATE_LOG_DIRupdate-$DATE.json
+UPDATE_LOG_FILE_PATH=$UPDATE_LOG_DIR"update-"$DATE.json
 
 dog_show () {
   dog --config $CONFIG_FILE_PATH screenboard show $S_ID | jq '.'
